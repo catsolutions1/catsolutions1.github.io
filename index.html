@@ -7,34 +7,59 @@
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+	    <link href="./assets/favicon.ico" rel="icon" type="image/x-icon" />
 	    <link href="./style.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
     </head>
 
     <body>
         <div class="layout">
             <header class="header-content">
                 <h1 class="header-title">catsolutions's website</h1>
-                <p>navigation</p>
+                <a href="./index.html">Home</a>
             </header>
 
             <aside class="left-sidebar">
-                <h2>Sidebar</h2>
-                <p>add some widgets here</p>
+                <div class="sidebar-section">
+                    <h1 class="sidebar-title">Poll</h1>
+                    <blockquote>
+                    <h3>Pancakes or Waffles?</h3>
+                    <form>
+                        <label><input type="radio" />Pancakes!</label>
+                        <br />
+                        <label><input type="radio" />Waffles!</label>
+                        <br />
+                        <br />
+                        <button type="submit">Vote</button>
+                    </form>
+                    </blockquote>
+                </div>
+
+                <div class="sidebar-section">
+                    <h1 class="sidebar-title">Fun Fact</h1>
+                    <blockquote>The word "gullible" is printed on the back of some computer monitors.</blockquote>
+                </div>
             </aside>
 
             <main>
-                <blockquote>Website under construction!</blockquote>
+                <blockquote><strong>⚠ Website under construction! ⚠</strong></blockquote>
                 <h1>Welcome!</h1>
-                <p>This is my website, expect some updates soon :)</p>
+                <img src="" alt="a picture of my cat"/>
+                <h2>What is this?</h2>
+                <p>This is my website. But you probably knew that already.</p>
+                <p>I'm using this website as a blog or archive of sorts for things that I find interesting. Maybe you'll find them interesting, too.</p>
             </main>
 
             <article>
-                <a href="https://neocities.org/site/catsolutions">profile</a>
+                <h2>Articles</h2>
+                <hr />
+
+                <h3><a href="./articles/1/article.html">What Happened to Kitchen League?</a></h3>
+                <p>A retrospective of the greatest cooking show ever streamed</p>
             </article>
 
             <footer>
-                <p>footer text</p>
+                <p>Profile: <a href="https://neocities.org/site/catsolutions">catsolutions</a></p>
             </footer>
         </div>
 </html>

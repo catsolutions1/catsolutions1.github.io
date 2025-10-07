@@ -1,0 +1,25 @@
+/* default */
+.layout {
+    width: 100%;
+    display: grid;
+    grid-gap: var(--margin);
+    grid-template: "header header" auto "leftSidebar main" auto "article article" auto "footer footer" auto / var(--sidebar-width) auto;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+
+    .layout {
+        width: 100%;
+        grid-template: "header" auto "leftSidebar" auto "main" auto "article" auto "footer" auto / 1fr;
+    }
+
+    aside {
+        border-bottom: 1px solid;
+        padding: 9px;
+        font-size: 0.9em;
+    }
+}
