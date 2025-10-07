@@ -14,11 +14,10 @@
 
     .layout {
         width: 100%;
-        grid-template: "header" auto "leftSidebar" auto "main" auto "article" auto "footer" auto / 1fr;
+        grid-template: "header" auto "main" auto "leftSidebar" auto "article" auto "footer" auto / 1fr;
     }
 
     aside {
-        border-bottom: 1px solid;
         padding: 9px;
         font-size: 0.9em;
     }
