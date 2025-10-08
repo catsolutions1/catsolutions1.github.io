@@ -3,7 +3,7 @@ document.getElementById("header")
         `<h1 class="header-title">catsolutions's website</h1>
         <a href="../">Home</a>
         <span style="display: inline-block;"></span>
-        <a href="../articles">Articles</a>`;
+        <a href="../posts">Posts</a>`;
 
 document.getElementById("footer")
     .innerHTML =
