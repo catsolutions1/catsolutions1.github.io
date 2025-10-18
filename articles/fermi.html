@@ -48,7 +48,7 @@
                 <h2>Size of the Moon</h2>
                 <p>I know that the Moon is one fourth the width of the Earth, so the Moon's radius is 1,000 miles.
                     $$r_{\text{Moon}}=\frac{r_{\text{Earth}}}{4}=1000\text{mi}$$</p>
-                <p>From this, we can use the formula for the <a href=../images/sphere.png>volume of a sphere</a> to find how big the moon is:
+                <p>From this, we can use the formula for the <a href=../images/fermi/sphere.png>volume of a sphere</a> to find how big the moon is:
                     $$v=\frac{4}{3}\pi r^3\approx4r^3$$
                     $$v_{\text{Moon}}=4\cdot(1000\text{mi})^3=4\cdot10^9\text{mi}^3$$</p>
                 <p>Hence, the Moon is 4 billion cubic miles in volume.</p>
@@ -60,7 +60,7 @@
                     $$\frac{\frac{1}{2}\sum_{i=2}^{3}i\frac{\text{sessions}}{\text{day}}\cdot\frac{1}{2}\sum_{i=2}^{3}i\frac{\text{gal}_{\text{milk}}}{\text{session}}}{1\text{cow}}\approx6\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{day}}$$
                     $$6\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{day}}\cdot\frac{365\text{days}}{\text{1year}}\cdot\frac{10\text{years}}{\text{1life}}\approx20000\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{life}}$$</p>
                 <p>Next, if we assume that 1 gallon of milk is needed for 1 pound of cheese, then we know that 20,000 (or 2×10<sup>4</sup>) pounds of cheese can be produced per cow lifetime. 
-                    (The conversion factor here is a little bit strange, but it turns out to be approximately correct.)
+                    (The conversion factor here is a little bit strange, but it turns out to be close enough.)
                     $$20000\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{life}}\cdot\frac{1\text{lb}_{\text{cheese}}}{1\text{gal}_{\text{milk}}}=20000\frac{\text{lb}_{\text{cheese}}}{\text{cow}\cdot\text{life}}$$</p>
                 <p>
                     Now we need to know the density of cheese, which will allow us to find the volume of cheese produced per cow lifetime. 
@@ -68,23 +68,25 @@
                     (This was a <em>really</em> <a href="https://web.archive.org/web/20220508162440/https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1353&context=foodmicrostructure">good guess</a>.) 
                     I remember that water has a density of 1 gram per cubic centimeter. 
                     We are using different units however, so we need to convert it. 
-                    By approximating some unit conversions, I found that cheese has a density of about 4×10<sup>12</sup> pounds per cubic mile. 
+                    By approximating some unit conversions, I found that cheese has a density of about 2×10<sup>12</sup> pounds per cubic mile. 
                     (This was not the most efficient way to achieve this unit conversion, but it worked with ratios I already knew.)
-                    $$\rho_{\text{cheese}}=\frac{1\text{g}}{1\text{cm}^3}\cdot \frac{(100000\text{cm})^3}{1\text{km}^3}\cdot \frac{(1.6\text{km})^3}{1\text{mi}^3}\cdot \frac{1000\text{g}}{1\text{kg}}\cdot \frac{1\text{lb}}{2.2\text{kg}}\approx\frac{8\cdot 10^{15}\text{lb}}{2\cdot 10^3\text{mi}^3}=4\cdot 10^{12}\frac{\text{lb}}{\text{mi}^3}$$</p>
+                    $$\rho_{\text{cheese}}=\frac{1\text{g}}{1\text{cm}^3}\cdot \frac{(100000\text{cm})^3}{1\text{km}^3}\cdot \frac{(1.6\text{km})^3}{1\text{mi}^3}\cdot \frac{1\text{kg}}{1000\text{g}}\cdot \frac{1\text{lb}}{2.2\text{kg}}\approx\frac{4\cdot 10^{15}\text{lb}}{2\cdot 10^3\text{mi}^3}=2\cdot 10^{12}\frac{\text{lb}}{\text{mi}^3}$$</p>
                 <p>The next step should be clear. 
                     By rearranging the density formula, we can solve for the volume of cheese produced in 1 cow lifetime. 
-                    This cancels the "mass" units and tells us that a single cow can produce 5×10<sup>-9</sup> cubic miles of cheese in its lifetime.
+                    This cancels the "mass" units and tells us that a single cow can produce 1×10<sup>-8</sup> cubic miles of cheese in its lifetime.
                     $$v=\frac{m}{\rho}$$
-                    $$\frac{v_{\text{cheese}}}{\text{cow}\cdot \text{life}}\stackrel{\text{???}}{=}\frac{\frac{2\cdot 10^4\text{lb}}{4\cdot 10^{12}\frac{\text{lb}}{\text{mi}^3}}}{\text{cow}\cdot \text{life}}=5\cdot 10^{-9}\frac{\text{mi}^3}{\text{cow}\cdot \text{life}}$$</p>
+                    $$\frac{v_{\text{cheese}}}{\text{cow}\cdot \text{life}}\stackrel{\text{???}}{=}\frac{\frac{2\cdot 10^4\text{lb}}{2\cdot 10^{12}\frac{\text{lb}}{\text{mi}^3}}}{\text{cow}\cdot \text{life}}=1\cdot 10^{-8}\frac{\text{mi}^3}{\text{cow}\cdot \text{life}}$$</p>
                 
                 <h2>Final Result</h2>
                 <p>The final step is to find the total number of cow lifetimes, which can be done by dividing the volume of the moon by the volume of cheese produced per cow lifetime. 
                     This results in the unit cow lifetimes, which is what the original question was asking for.
-                    $$\frac{v_{Moon}}{\frac{v_{cheese}}{\text{cow}\cdot \text{life}}}=\frac{4\cdot 10^9\text{mi}^3}{5\cdot 10^{-9}\frac{\text{mi}^3}{\text{cow}\cdot \text{life}}}\stackrel{\text{sorry what}}{\approx}1\cdot 10^{18}\text{cow}\cdot \text{life}$$</p>
-                <p>The answer is that it would take about 1 quintillion cows to create a Moon out of cheese.</p>
+                    $$\frac{v_{Moon}}{\frac{v_{cheese}}{\text{cow}\cdot \text{life}}}=\frac{4\cdot 10^9\text{mi}^3}{1\cdot 10^{-8}\frac{\text{mi}^3}{\text{cow}\cdot \text{life}}}\stackrel{\text{sorry what}}{=}4\cdot 10^{17}\text{cow}\cdot \text{life}$$</p>
+                <p>The answer is that it would take about 400 quadrillion cows 10 years to create a Moon out of cheese.</p>
                 <p>After finding this result, I wanted to know if anyone else had attempted this problem. 
-                    To my surprise, I found a <a href="https://www.reddit.com/r/theydidthemath/comments/4qj34t/request_how_much_milk_would_i_need_to_make_a/">Reddit post</a> that calculated the answer to be 2.32×10<sup>19</sup> cow years, or 2.32×10<sup>18</sup> in cow lifetimes (2.3 quintillion cows). 
-                    My answer is well within an order of magnitude of their answer, so I would say that my assumptions were reasonable.</p>
+                    To my surprise, I found a <a href="https://www.reddit.com/r/theydidthemath/comments/4qj34t/request_how_much_milk_would_i_need_to_make_a/">Reddit post</a> that calculated the answer to be 2.32×10<sup>18</sup> cow lifetimes, (2.32 quintillion cows 10 years). 
+                    My answer was about 5 times smaller, so I guess my estimates were on the lower side.</p>
+                <p>Update:</p>
+                <img class="image" src="../images/fermi/msg.png" />
             </main>
 
             <footer id="footer">
