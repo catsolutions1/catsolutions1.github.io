@@ -5,7 +5,9 @@ document.getElementById("header")
         <span style="display: inline-block;"></span>
         <a href="./articles">Articles</a>
         <span style="display: inline-block;"></span>
-        <a href="./poetry">Poetry</a>`;
+        <a href="./poetry">Poetry</a>
+        <span style="display: inline-block;"></span>
+        <a href="./links">Links</a>`;
 
 document.getElementById("footer")
     .innerHTML =
