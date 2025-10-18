@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>How Many Cows Would It Take to Create a Moon Out of Cheese?</title>
+
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	    <link href="../favicon.ico" rel="icon" type="image/x-icon" />
+	    <link href="../css/global.css" rel="stylesheet" />
+        <link href="../css/posts.css" rel="stylesheet" />
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <div class="layout">
+            <header class="header-content" id="header">
+                <noscript>Header failed to load (try enabling JavaScript).</noscript>
+            </header>
+
+            <main>
+                <h1>How Many Cows Would It Take to Create a Moon Out of Cheese?</h1>
+                <h3>A Fermi estimation problem</h3>
+                <p>To be more precise, I am asking for the quantity of requisite cow lifetimes to produce the milk needed for an amount of cheese whose volume is equivalent to that of Earth's Moon. 
+                    For this problem, I will assume that cheese maintains the same density regardless of the volume of the body, and that all cheeses have the same physical properties. 
+                    Additionally, the Moon will be treated as though it were a perfect sphere. 
+                    The calculations for this problem were done mentally, so some liberties were taken to make the math a bit easier for me.</p>
+                <p>First, we need to know how much space the Moon takes up. 
+                    At the very least, I know that the Moon is really big.<sup>[<a href="https://en.wikipedia.org/wiki/Wikipedia:Citation_needed"><em>citation needed</em></a>]</sup> 
+                    I could use features of the Moon to estimate its size, however the Earth has a much more distinct surface than the Moon, so it makes more sense to begin my estimates there. 
+                    (The Moon does have a lot of craters, but figuring out the size of those is another Fermi estimation problem in and of itself.)</p>
+                
+                <h2>Size of the Earth</h2>
+                <p>I know that Africa is about 5,000 miles wide from east to west. 
+                    (It didn't matter whether or not I used SI units because this problem was completely insane regardless.)
+                    The map of the world hanging in my living room is about 5 Africas wide, so the circumference of the Earth must be 5 times the width of Africa. 
+                    This comes out to 25,000 miles.
+                    $$1\text{Africa}\stackrel{\text{def}}{=}5000\text{mi}$$
+                    $$C_{\text{Earth}}\stackrel{\text{def}}{=}5\text{Africas}=25000\text{mi}$$</p>
+                <p>The formula for the circumference of a circle is 2π times the radius, but π is about 3, so a decent estimate for the circumference of a circle is 6 times the radius. 
+                    $$C=2\pi r$$
+                    $$r\approx\frac{C}{6}$$</p>
+                <p>24 divided by 6 is equal to 4, and 25 is pretty close to 24, so I'm going to simplify the division and say that the radius of the Earth is about 4,000 miles. 
+                    (The actual average radius of the Earth turns out to be eerily close, at 3,959 miles.)
+                    $$C_{\text{Earth}}\stackrel{\text{redef}}{=}24000\text{mi}$$
+                    $$r_{\text{Earth}}=\frac{24000\text{mi}}{6}=4000\text{mi}$$</p>
+                
+                <h2>Size of the Moon</h2>
+                <p>I know that the Moon is one fourth the width of the Earth, so the Moon's radius is 1,000 miles.
+                    $$r_{\text{Moon}}=\frac{r_{\text{Earth}}}{4}=1000\text{mi}$$</p>
+                <p>From this, we can use the formula for the <a href=../images/sphere.png>volume of a sphere</a> to find how big the moon is:
+                    $$v=\frac{4}{3}\pi r^3\approx4r^3$$
+                    $$v_{\text{Moon}}=4\cdot(1000\text{mi})^3=4\cdot10^9\text{mi}^3$$</p>
+                <p>Hence, the Moon is 4 billion cubic miles in volume.</p>
+
+                <h2>More Cowculations</h2>
+                <p>The second part of this problem is to find out how many cows we need to make all of that cheese. 
+                    Since I know that dairy cows are usually milked twice or thrice per day, and it seems reasonable to assume that a cow will produce 2-3 gallons of milk per session, this averages out to about 6 gallons of milk per day. 
+                    If a cow lives for 10 years, then a single cow will produce about 20,000 gallons of milk over the course of its lifetime.
+                    $$\frac{\frac{1}{2}\sum_{i=2}^{3}i\frac{\text{sessions}}{\text{day}}\cdot\frac{1}{2}\sum_{i=2}^{3}i\frac{\text{gal}_{\text{milk}}}{\text{session}}}{1\text{cow}}\approx6\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{day}}$$
+                    $$6\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{day}}\cdot\frac{365\text{days}}{\text{1year}}\cdot\frac{10\text{years}}{\text{1life}}\approx20000\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{life}}$$</p>
+                <p>Next, if we assume that 1 gallon of milk is needed for 1 pound of cheese, then we know that 20,000 (or 2×10<sup>4</sup>) pounds of cheese can be produced per cow lifetime. 
+                    (The conversion factor here is a little bit strange, but it turns out to be approximately correct.)
+                    $$20000\frac{\text{gal}_{\text{milk}}}{\text{cow}\cdot\text{life}}\cdot\frac{1\text{lb}_{\text{cheese}}}{1\text{gal}_{\text{milk}}}=20000\frac{\text{lb}_{\text{cheese}}}{\text{cow}\cdot\text{life}}$$</p>
+                <p>
+                    Now we need to know the density of cheese, which will allow us to find the volume of cheese produced per cow lifetime. 
+                    I went into my kitchen and grabbed a block of cheese and a water bottle of similar sizes, and they felt about the same weight, so cheese and water are the same density. 
+                    (This was a <em>really</em> <a href="https://web.archive.org/web/20220508162440/https://digitalcommons.usu.edu/cgi/viewcontent.cgi?article=1353&context=foodmicrostructure">good guess</a>.) 
+                    I remember that water has a density of 1 gram per cubic centimeter. 
+                    We are using different units however, so we need to convert it. 
+                    By approximating some unit conversions, I found that cheese has a density of about 4×10<sup>12</sup> pounds per cubic mile. 
+                    (This was not the most efficient way to achieve this unit conversion, but it worked with ratios I already knew.)
+                    $$\rho_{\text{cheese}}=\frac{1\text{g}}{1\text{cm}^3}\cdot \frac{(100000\text{cm})^3}{1\text{km}^3}\cdot \frac{(1.6\text{km})^3}{1\text{mi}^3}\cdot \frac{1000\text{g}}{1\text{kg}}\cdot \frac{1\text{lb}}{2.2\text{kg}}\approx\frac{8\cdot 10^{15}\text{lb}}{2\cdot 10^3\text{mi}^3}=4\cdot 10^{12}\frac{\text{lb}}{\text{mi}^3}$$</p>
+                <p>The next step should be clear. 
+                    By rearranging the density formula, we can solve for the volume of cheese produced in 1 cow lifetime. 
+                    This cancels the "mass" units and tells us that a single cow can produce 5×10<sup>-9</sup> cubic miles of cheese in its lifetime.
+                    $$v=\frac{m}{\rho}$$
+                    $$\frac{v_{\text{cheese}}}{\text{cow}\cdot \text{life}}\stackrel{\text{???}}{=}\frac{\frac{2\cdot 10^4\text{lb}}{4\cdot 10^{12}\frac{\text{lb}}{\text{mi}^3}}}{\text{cow}\cdot \text{life}}=5\cdot 10^{-9}\frac{\text{mi}^3}{\text{cow}\cdot \text{life}}$$</p>
+                
+                <h2>Final Result</h2>
+                <p>The final step is to find the total number of cow lifetimes, which can be done by dividing the volume of the moon by the volume of cheese produced per cow lifetime. 
+                    This results in the unit cow lifetimes, which is what the original question was asking for.
+                    $$\frac{v_{Moon}}{\frac{v_{cheese}}{\text{cow}\cdot \text{life}}}=\frac{4\cdot 10^9\text{mi}^3}{5\cdot 10^{-9}\frac{\text{mi}^3}{\text{cow}\cdot \text{life}}}\stackrel{\text{sorry what}}{\approx}1\cdot 10^{18}\text{cow}\cdot \text{life}$$</p>
+                <p>The answer is that it would take about 1 quintillion cows to create a Moon out of cheese.</p>
+                <p>After finding this result, I wanted to know if anyone else had attempted this problem. 
+                    To my surprise, I found a <a href="https://www.reddit.com/r/theydidthemath/comments/4qj34t/request_how_much_milk_would_i_need_to_make_a/">Reddit post</a> that calculated the answer to be 2.32×10<sup>19</sup> cow years, or 2.32×10<sup>18</sup> in cow lifetimes (2.3 quintillion cows). 
+                    My answer is well within an order of magnitude of their answer, so I would say that my assumptions were reasonable.</p>
+            </main>
+
+            <footer id="footer">
+                <p><noscript>Footer failed to load (try enabling JavaScript).</noscript></p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="../js/level_2.js"></script>
+    </body>
+</html>
