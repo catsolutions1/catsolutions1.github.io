@@ -1,6 +1,6 @@
 /* default */
 .layout {
-    width: 100%;
+    width: max(50%, min(800px, 100%));
     display: grid;
     grid-gap: var(--margin);
     grid-template: "header header" auto "main main" auto "footer footer" auto / var(--sidebar-width) auto;
