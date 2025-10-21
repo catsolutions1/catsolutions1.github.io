@@ -2,11 +2,10 @@
     /* Background Colors: */
     --background-color: #eeeeee;
     --content-background-color: #ffffff;
-    --sidebar-background-color: #ffffff;
+    --selection-color: #2fe848;
 
     /* Text Colors: */
-    --text-color: #000000;
-    --sidebar-text-color: #000000;
+    --text-color: #0a0908;
     --link-color: #2fe848;
     --link-color-hover: #7780ec;
 
@@ -57,7 +56,7 @@ a:active {
 
 ::selection {
     color: var(--text-color);
-    background-color: var(--link-color);
+    background-color: var(--selection-color);
 }
 
 
@@ -202,9 +201,8 @@ aside {
     border: var(--border);
     border-radius: var(--round-borders);
     overflow: hidden;
-    background: var(--sidebar-background-color);
+    background: var(--content-background-color);
     padding: var(--padding);
-    color: var(--sidebar-text-color);
 }
 
 .left-sidebar {
