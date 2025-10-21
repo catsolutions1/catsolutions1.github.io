@@ -5,9 +5,9 @@
     --selection-color: #2fe848;
 
     /* Text Colors: */
-    --text-color: #0a0908;
-    --link-color: #2fe848;
-    --link-color-hover: #7780ec;
+    --text-color: #000000;
+    --link-color: #008000;
+    --link-color-hover: #006dff;
 
     /* Text: */
     --font: Monaco, monospace;
