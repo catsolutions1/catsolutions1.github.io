@@ -141,8 +141,8 @@
                     Wild cards may be played on any card unless a play restriction would prevent a player from doing so.
                 </p>
                 <p>
-                    If the active player has no matches or they choose not to play any of their cards even though they might have a match, they must draw a card from the deck. 
-                    If that card can be played, it may be played. 
+                    If the active player has no matches or they choose not to play any of their cards even though they might have a match, they must draw from the deck (see <a href="#tempo">Tempo</a>). 
+                    If a drawn card can be played, it may be played. 
                     Otherwise, the card is kept, and the next person in turn order becomes the active player.
                 </p>
                 <p>
@@ -155,11 +155,13 @@
                     Eliminated players can no longer take any turns, and are considered out of the game. Eliminated players' hands are burned (placed at the bottom of the discard pile).
                 </p>
 
-                <h3>Tempo</h3>
+                <h3 id="tempo">Tempo</h3>
                 <p>
                     During their turn, players must play a number of cards equal to the current tempo. 
                     The tempo starts at 1 and may increase from Speed Up effects. 
-                    If a player is unable to play enough cards to meet the tempo, they play what they can and then draw cards equal to the tempo. Then, the tempo resets back to 1.
+                    If a player is unable to play enough cards to meet the tempo, they play what they can and then draw cards equal to the tempo. 
+                    If any of those cards are playable, they may be played, up to the number of cards still required to meet tempo.
+                    Then, the tempo resets back to 1.
                 </p>
                 <p>
                     Each card played must match the previous card. 
@@ -183,7 +185,7 @@
                 <p>
                     Whenever a Draw or Stack card is played, a penalty is added to the stack, and a play restriction comes into effect. 
                     If a player is unable to meet tempo while a stack is active, then they must draw cards equal to the stack's penalty, instead of drawing from the deck normally. 
-                    (They may not play any of the drawn cards that turn. The tempo still resets.) 
+                    (They may not play any more cards that turn. The tempo still resets.) 
                     If this happens, then the stack ends.
                 </p>
 
@@ -397,7 +399,7 @@
                         <li>
                             Any cards played on a mini-pile skip the Select Color and Perform Actions events. 
                             If a player is unable to meet tempo, then they must put all cards from the mini-pile into their hand instead of drawing from the deck. 
-                            (They may not play any of those cards that turn. The tempo still resets.) 
+                            (They may not play any more cards that turn. The tempo still resets.) 
                             Play continues with the next player in the current turn order on the normal discard pile.
                         </li>
                         <li>
