@@ -49,13 +49,13 @@
                         <li>One in each color Skip, Reverse, Draw 2</li>
                         <li>Two in each color Skip Everyone, Draw 4</li>
                         <li>Three in each color Discard Color</li>
-                        <li>Two each of Wild Reverse Draw 4, Wild Draw 6, Wild Draw 10, Wild Draw Color</li>
+                        <li>Two each of Wild Reverse Draw 4, Wild Draw 6, Wild Draw 10, Wild Color Roulette</li>
                     </ul>
                     <li><strong>UNO Flex</strong> - 84+8 cards</li>
                     <ul>
                         <li>Two in each color 1-8</li>
-                        <li>One in each color Skip//Skip Everyone, Reverse//Reverse Skip, Draw 2//All Draw 1</li>
-                        <li>Two each of Wild All Flip, Wild//All Draw 2, Wild//Targeted Draw 2, Wild Draw 4//Targeted Draw 4</li>
+                        <li>One in each color Skip//Skip Everyone, Reverse//Reverse Skip, Draw 2//Everyone Draw 1</li>
+                        <li>Two each of Wild All Flip, Wild//Everyone Draw 2, Wild//Targeted Draw 2, Wild Draw 4//Targeted Draw 4</li>
                         <li><em>Eight (or more) Power Cards</em></li>
                     </ul>
                     <li><strong>UNO Remix</strong> - 80 cards</li>
@@ -76,7 +76,7 @@
                     <ul>
                         <li>One in each color 0-9</li>
                         <li>One in each color Skip, Reverse, Draw 2</li>
-                        <li>Two each of Wild, Wild Draw 4, Wild Superstar</li>
+                        <li>Two each of Wild, Wild Draw 4, Wild Super Star</li>
                     </ul>
                     <li><strong>UNO Teams</strong> - 54 cards</li>
                     <ul>
@@ -92,7 +92,7 @@
                     <li><strong>DOS (First Edition)</strong> - 48 cards</li>
                     <ul>
                         <li>One in each color 1, 3-10</li>
-                        <li>Two in each color Wild #</li>
+                        <li>Two in each color #</li>
                         <li>Four each of Wild DOS</li>
                     </ul>
                     <li><strong>UNO Golf</strong> - 44 cards</li>
@@ -176,18 +176,17 @@
 
                 <h3>Stacking</h3>
                 <p>
-                    Whenever a Draw or Stack card is played, a penalty corresponding to the card's effect is added to the stack. 
-                    If there currently isn't a stack, a stack is created before adding the penalty. 
-                    While there is a stack, only Draw or Stack cards may be played (determined by the last played card). 
-                    During a player's turn, that player may draw cards equal to the stack's penalty to end the stack. 
-                    If they choose not to, then that player <strong>must</strong> play a card according to the play restriction (they cannot draw like they would if they didn't have a match).
+                    Whenever a Draw or Stack card is played, a penalty is added to the stack, and a play restriction comes into effect. 
+                    During each player's turn, if there is a stack, then that player may draw cards equal to the stack's penalty to end the stack. 
+                    If they do so, then that player's turn ends. 
+                    If they choose not to, then that player <strong>must</strong> play a card according to the restriction (they cannot draw like they would if they didn't have a match).
                 </p>
 
                 <h3>Flexing</h3>
                 <p>
-                    Some cards have two sides: a "normal" side and a "flex" side. 
+                    Some cards have two sides: a "regular" side and a "flex" side. 
                     If your Power Card is green, you may play the flex side of a card by flipping your Power Card to red. 
-                    When you are matching to a flex card, always match to the primary color and symbol (the "normal" side). 
+                    When you are matching to a flex card in the discard pile, always match to the primary color and symbol (the "regular" side). 
                     If every player's Power Card is red, then all players flip theirs back to green.
                 </p>
 
@@ -201,36 +200,26 @@
                     Modifiers are not counted as part of a card's identity. 
                     There are five modifiers:
                     <ol>
-                        <li>Flip</li>
+                        <li><strong>Flip</strong> (Flex)</li>
                         <ul>
                             <li>Flip your Power Card, regardless of its current state.</li>
                         </ul>
-                        <li>Trade</li>
+                        <li><strong>Trade</strong> (No Mercy)</li>
                         <ul>
                             <li>Trade hands with another player of your choice.</li>
                         </ul>
-                        <li>Pass</li>
+                        <li><strong>Pass</strong> (No Mercy)</li>
                         <ul>
                             <li>All players pass their hand to the next player in the current turn order.</li>
                         </ul>
-                        <li>Swap</li>
+                        <li><strong>Swap</strong> (Teams)</li>
                         <ul>
                             <li>Choose another player. You and that player both pass each other 1 card.</li>
                         </ul>
-                        <li>Speed Up</li>
+                        <li><strong>Speed Up</strong> (Speed Pack)</li>
                         <ul>
                             <li>The tempo increases by 1.</li>
                         </ul>
-                    </ol>
-                </p>
-
-                <h3>Creeper Card</h3>
-                <p>Whenever a Creeper card enters your hand, you must immediately reveal it. 
-                    Then, draw a 3 card penalty unless:
-                    <ol>
-                        <li>You have already received this penalty this turn</li>
-                        <li>You played the Creeper illegally as part of a jump-in</li>
-                        <li>The Creeper was in your opening hand</li>
                     </ol>
                 </p>
 
@@ -248,22 +237,221 @@
                     If an illegal card is played, the active player does not change and the stack is unaffected.
                 </p>
 
-                <h3>Mini Tech</h3>
+                <h3>Restrictions</h3>
+                <p>
+                    Restrictions limit what cards are playable beyond just matching the current color or symbol. 
+                    For example, a color restriction forces players to only play cards of a specific color. 
+                    If at least one property of a card matches the restriction, then that card is eligible to be matched. 
+                    In other words, played cards have to match the top card of the discard pile <strong>and</strong> the restriction.
+                </p>
+
+                <h3 id="mini-tech">Mini Tech</h3>
                 <p>
                     The secondary side of a flex card can be played on a mini-pile if its color matches the restriction. 
-                    If a flex side is played, the next player must play a matching card while still following the color restriction (this usually forces the next player to play a Wild card).
+                    If a flex side is played, the next player must play a card matching the primary side while still following the color restriction. 
+                    (Wild cards can still be played as well.)
                 </p>
 
                 <h3>Event Order</h3>
                 <p>
-                    When the last card for tempo each turn is played, events happen in the following order: Announce Flexing -> Select Color -> Perform Action -> Perform Modifier. 
-                    If any of these events don't apply to the played card, skip that event. 
-                    If a card has multiple actions, perform them from left to right as printed on the card. 
-                    Once all events for the last played card are finished, the active player changes to the next player in the turn order. 
-                    A jump-in may not be performed while any of these events are unresolved.
+                    When a card is played, these events happen in the following order: 
                 </p>
+                <ol>
+                    <li>Announce Flexing (if card can be flexed)</li>
+                    <li>Select Color (if card has black background)</li>
+                    <li>Perform Actions (if card has action symbols)</li>
+                    <li>Activate Modifiers (if card has modifiers)</li>
+                </ol>
+                <p>
+                    Skip the Perform Actions event if the card is <strong>not</strong> the last card played for tempo. 
+                    If a card has multiple actions, perform them from left to right as they appear in the card's name. 
+                    Once all events for the last played card are finished, the active player changes to the next player in the turn order. 
+                </p>
+                <p>A jump-in may not be performed while any of these events are unresolved.</p>
 
-                <h2>List of Card Actions</h2>
+                <h2>List of Action Symbols</h2>
+                <ul>
+                    <li><strong>Skip</strong> (Party, No Mercy, Flex, Remix, Minecraft, Mario, Teams, Golf)</li>
+                    <ul>
+                        <li>The player after next player in the turn order becomes the active player at the end of this turn.</li>
+                    </ul>
+
+                    <li><strong>Targeted Skip (Phase 10)</strong></li>
+                    <ul>
+                        <li>Choose another player. The next time that player would become the active player, instead the next player in the turn order becomes the active player.</li>
+                    </ul>
+
+                    <li><strong>Skip Everyone</strong> (No Mercy, Flex, Remix)</li>
+                    <ul>
+                        <li>At the end of this turn, you become the active player.</li>
+                    </ul>
+
+                    <li><strong>Team Play</strong> (Teams)</li>
+                    <ul>
+                        <li>
+                            Choose another player. 
+                            That player becomes the active player. 
+                            If that player is unable to meet the tempo, they draw cards equal to double the current tempo instead.
+                        </li>
+                    </ul>
+
+                    <li><strong>Reverse</strong> (Party, No Mercy, Flex, Remix, Minecraft, Mario, Teams, Golf, Reverse Pack)</li>
+                    <ul>
+                        <li>The turn order is reversed. Flip the Direction Tracker to indicate the new direction.</li>
+                    </ul>
+
+                    <li><strong>Draw 2/4/6/10</strong> (Party, No Mercy, Flex, Remix, Minecraft, Mario, Teams, Golf, Reverse Pack)</li>
+                    <ul>
+                        <li>Add a penalty of 2/4/6/10 cards to the stack. If there isn't already a stack, create one. Play is now restricted to Draw, Stack, Shield, and Super Star cards until the stack ends.</li>
+                    </ul>
+
+                    <li><strong>Stack 1/2/3</strong> (Remix, Stack Pack)</li>
+                    <ul>
+                        <li>Add a penalty of 1/2/3 cards to the stack. If there isn't already a stack, create one. Play is now restricted to Stack, Shield, and Super Star cards until the stack ends. This card can be played on any Draw or Stack card.</li>
+                    </ul>
+
+                    <li><strong>Stack Number</strong> (Stack Pack)</li>
+                    <ul>
+                        <li>
+                            Reveal cards from the top of the deck until you reveal a number card. 
+                            Add a penalty equal to the card's number to the stack. If there isn't already a stack, create one. 
+                            All of the revealed cards are burned. 
+                            Play is now restricted to Stack, Shield, and Super Star cards until the stack ends. 
+                            This card can be played on any Draw or Stack card.
+                        </li>
+                    </ul>
+
+                    <li><strong>Shield</strong> (Remix)</li>
+                    <ul>
+                        <li>End the current stack, if there is one.</li>
+                    </ul>
+
+                    <li><strong>Super Star</strong> (Mario)</li>
+                    <ul>
+                        <li>The previous active player draws cards equal to the stack's penalty. Then, end the current stack.</li>
+                    </ul>
+
+                    <li><strong>Targeted Draw 2/4</strong> (Flex)</li>
+                    <ul>
+                        <li>Choose another player to immediately draw 2/4 cards.</li>
+                    </ul>
+
+                    <li><strong>Double Draw 2</strong> (Teams, Golf)</li>
+                    <ul>
+                        <li>Choose another player, twice. (You can choose the same player more than once.) The chosen player(s) immediately draws 2 cards for each time that they were chosen.</li>
+                    </ul>
+
+                    <li><strong>Everyone Draw 1/2</strong> (Flex)</li>
+                    <ul>
+                        <li>All other players immediately draw 1/2 cards.</li>
+                    </ul>
+
+                    <li><strong>Drawn Together</strong> (Party)</li>
+                    <ul>
+                        <li>
+                            Choose two players and give each of them a Link Card. 
+                            If two players are already linked, choose two new players. 
+                            Anytime one of these players draws cards, the other player immediately draws the same number of cards. 
+                            The Drawn Together link ends when a Point Taken card is played.
+                        </li>
+                    </ul>
+
+                    <li><strong>Point Taken</strong> (Party)</li>
+                    <ul>
+                        <li>
+                            Put any Link Cards back in the center of the table. 
+                            Then, count down "3, 2, 1!". 
+                            On 1, every player points at one other player. 
+                            Then, starting with you and continuing in turn order, each player draws 1 card for every player pointing at them, up to a maximum of 5 cards.
+                        </li>
+                    </ul>
+
+                    <li><strong>Pile Up</strong> (Party)</li>
+                    <ul>
+                        <li>
+                            Reveal cards from the top of the deck until you reveal a colored card (any other revealed cards are burned). 
+                            This card begins a second discard pile called a mini-pile, which all players must now play on. 
+                            Play is now restricted to the color of the revealed card and Wild cards until the mini-pile ends.
+                            Any cards played on a mini-pile skip the Select Color and Perform Actions events. 
+                            If a player is unable to play a card, then they must put all cards from the mini-pile into their hand instead of drawing from the deck. 
+                            Play continues with the next player in the current turn order.
+                        </li>
+                        <li>
+                            Note: If the top card of the mini-pile is a different color than the restriction, normal matching rules still apply in addition to the restriction. See <a href="#mini-tech">Mini Tech</a>.
+                        </li>
+                    </ul>
+
+                    <li><strong>Color Roulette</strong> (No Mercy)</li>
+                    <ul>
+                        <li>
+                            The next player reveals cards from the top deck until they reveal a card of the color you selected (Wild cards do not count). 
+                            All revealed cards are added to that player's hand. 
+                            The player after that player becomes the active player at the end of this turn.
+                        </li>
+                    </ul>
+
+                    <li><strong>Discard Color</strong> (No Mercy)</li>
+                    <ul>
+                        Discard all cards in your hand which match the color of this card. (These cards go at the bottom of the discard pile.)
+                    </ul>
+
+                    <li><strong>Refresh Hand</strong> (Swap Pack)</li>
+                    <ul>
+                        <li>Count the number of cards in your hand, then put your hand at the bottom of the discard pile and draw that many cards.</li>
+                    </ul>
+
+                    <li><strong>Swap</strong> (Swap Pack)</li>
+                    <ul>
+                        <li>Choose another player. You and that player both pass each other 1 card.</li>
+                    </ul>
+
+                    <li><strong>Force Trade</strong> (Swap Pack)</li>
+                    <ul>
+                        <li>Choose two players. Those players trade hands.</li>
+                    </ul>
+
+                    <li><strong>Pass Hands</strong> (Swap Pack)</li>
+                    <ul>
+                        <li>All players pass their hand to the next player in the current turn order.</li>
+                    </ul>
+
+                    <li><strong>Gift</strong> (Remix)</li>
+                    <ul>
+                        <li>When this card enters your hand, reveal it and pass it to another player.</li>
+                    </ul>
+
+                    <li><strong>Creeper</strong> (Minecraft)</li>
+                    <ul>
+                        <li>Whenever a Creeper card enters your hand, you must immediately reveal it. 
+                            Then, draw a 3 card penalty unless:
+                            <ol>
+                                <li>You have already received this penalty this turn</li>
+                                <li>You played the Creeper illegally as part of a jump-in</li>
+                                <li>The Creeper was in your opening hand</li>
+                            </ol>
+                        </li>
+                    </ul>
+
+                    <li><strong>DOS</strong> (DOS)</li>
+                    <ul>
+                        <li>This card counts as a 2 while it is the top card of the discard pile.</li>
+                    </ul>
+
+                    <li><strong>#</strong> (DOS)</li>
+                    <ul>
+                        <li>Choose a number from 0-12, or 22. This card counts as that number while it is the top card of the discard pile. This card may be played on any number card if the number you choose matches that card.</li>
+                    </ul>
+
+                    <li><strong>All Flip</strong> (Flex) </li>
+                    <ul>
+                        <li>All players flip their Power Card.</li>
+                    </ul>
+
+                    <li><strong>Double Speed Up</strong> (Speed Pack)</li>
+                    <ul>
+                        <li>The tempo increases by 2.</li>
+                    </ul>
+                </ul>
             </main>
 
             <footer id="footer">
