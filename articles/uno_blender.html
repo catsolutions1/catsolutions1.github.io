@@ -182,9 +182,9 @@
                 <h3>Stacking</h3>
                 <p>
                     Whenever a Draw or Stack card is played, a penalty is added to the stack, and a play restriction comes into effect. 
-                    During each player's turn, if there is a stack, then that player may draw cards equal to the stack's penalty to end the stack. 
-                    If they do so, then that player's turn ends. 
-                    If they choose not to, then that player <strong>must</strong> play a card according to the restriction (they cannot draw like they would if they didn't have a match).
+                    If a player is unable to meet tempo while a stack is active, then they must draw cards equal to the stack's penalty, instead of drawing from the deck normally. 
+                    (They may not play any of the drawn cards that turn. The tempo still resets.) 
+                    If this happens, then the stack ends.
                 </p>
 
                 <h3>Flexing</h3>
@@ -393,9 +393,12 @@
                             Reveal cards from the top of the deck until you reveal a colored card (any other revealed cards are burned). 
                             This card begins a second discard pile called a mini-pile, which all players must now play on. 
                             Play is now restricted to the <strong>color of the revealed card</strong> and <strong>Wild</strong> cards until the mini-pile ends.
+                        </li>
+                        <li>
                             Any cards played on a mini-pile skip the Select Color and Perform Actions events. 
-                            If a player is unable to play a card, then they must put all cards from the mini-pile into their hand instead of drawing from the deck. 
-                            Play continues with the next player in the current turn order.
+                            If a player is unable to meet tempo, then they must put all cards from the mini-pile into their hand instead of drawing from the deck. 
+                            (They may not play any of those cards that turn. The tempo still resets.) 
+                            Play continues with the next player in the current turn order on the normal discard pile.
                         </li>
                         <li>
                             Note: If the top card of the mini-pile is a different color than the restriction, normal matching rules still apply in addition to the restriction. See <a href="#mini-tech">Mini Tech</a>.
@@ -413,7 +416,8 @@
 
                     <li><strong>Discard Color</strong> (No Mercy)</li>
                     <ul>
-                        Burn all cards in your hand which match the color of this card. (Those cards go to the bottom of the discard pile.)
+                        Burn each card in your hand that matches the color of this card. 
+                        You don't need to call "UNO" if you have zero cards in your hand afterwards. 
                     </ul>
 
                     <li><strong>Refresh Hand</strong> (Swap Pack)</li>
